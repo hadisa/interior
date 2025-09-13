@@ -17,7 +17,7 @@ import {
   Mail
 } from 'lucide-react';
 
-export default function Home() {
+export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -37,11 +37,11 @@ export default function Home() {
             {/* Desktop Navigation */}
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-8">
-                <a href="#home" className="text-stone-700 hover:text-amber-800 transition-colors px-3 py-2 text-sm font-medium">Home</a>
-                <a href="#about" className="text-stone-700 hover:text-amber-800 transition-colors px-3 py-2 text-sm font-medium">About</a>
-                <a href="#services" className="text-stone-700 hover:text-amber-800 transition-colors px-3 py-2 text-sm font-medium">Services</a>
-                <a href="#projects" className="text-stone-700 hover:text-amber-800 transition-colors px-3 py-2 text-sm font-medium">Projects</a>
-                <a href="#portfolio" className="text-stone-700 hover:text-amber-800 transition-colors px-3 py-2 text-sm font-medium">Portfolio</a>
+                <a href="/" className="text-amber-800 px-3 py-2 text-sm font-medium border-b-2 border-amber-800">Home</a>
+                <a href="/about" className="text-stone-700 hover:text-amber-800 transition-colors px-3 py-2 text-sm font-medium">About</a>
+                <a href="/services" className="text-stone-700 hover:text-amber-800 transition-colors px-3 py-2 text-sm font-medium">Services</a>
+                <a href="/projects" className="text-stone-700 hover:text-amber-800 transition-colors px-3 py-2 text-sm font-medium">Projects</a>
+                <a href="/portfolio" className="text-stone-700 hover:text-amber-800 transition-colors px-3 py-2 text-sm font-medium">Portfolio</a>
               </div>
             </div>
 
@@ -66,11 +66,11 @@ export default function Home() {
           {isMenuOpen && (
             <div className="md:hidden">
               <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-stone-200">
-                <a href="#home" className="block text-stone-700 hover:text-amber-800 px-3 py-2 text-base font-medium">Home</a>
-                <a href="#about" className="block text-stone-700 hover:text-amber-800 px-3 py-2 text-base font-medium">About</a>
-                <a href="#services" className="block text-stone-700 hover:text-amber-800 px-3 py-2 text-base font-medium">Services</a>
-                <a href="#projects" className="block text-stone-700 hover:text-amber-800 px-3 py-2 text-base font-medium">Projects</a>
-                <a href="#portfolio" className="block text-stone-700 hover:text-amber-800 px-3 py-2 text-base font-medium">Portfolio</a>
+                <a href="/" className="block text-stone-700 hover:text-amber-800 px-3 py-2 text-base font-medium">Home</a>
+                <a href="/about" className="block text-stone-700 hover:text-amber-800 px-3 py-2 text-base font-medium">About</a>
+                <a href="/services" className="block text-stone-700 hover:text-amber-800 px-3 py-2 text-base font-medium">Services</a>
+                <a href="/projects" className="block text-stone-700 hover:text-amber-800 px-3 py-2 text-base font-medium">Projects</a>
+                <a href="/portfolio" className="block text-stone-700 hover:text-amber-800 px-3 py-2 text-base font-medium">Portfolio</a>
                 <Button className="w-full mt-4 bg-amber-800 hover:bg-amber-900 text-white">
                   Get Started
                 </Button>
