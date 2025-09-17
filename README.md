@@ -82,4 +82,4 @@
  - LinkedIn: https://linkedin.com/in/hadisa-norozi
 
  ## License
- This project’s license has not been specified. If you intend to open source it, consider adding a LICENSE file (e.g., MIT) and updating this section accordingly.
+MIT
